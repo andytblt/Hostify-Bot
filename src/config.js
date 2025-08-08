@@ -3,24 +3,24 @@ module.exports = {
 	botVersion: "BETA-v1.7.0",
 
 	// BOT INFO //
-	prefix: "t?", // Default prefix
+	prefix: "+", // Default prefix
 	status: "dnd",
 	eventListeners: 20,
-	botName: "testify",
+	botName: "Hostify",
 	dev: "Kkermit",
 	devBy: "| Developed by kkermit",
 	developers: "526853643962679323",
-	noPerms: `You **do not** have the required permissions to use this command!`,
-	ownerOnlyCommand: `This command is **only** available for the owner of the bot!`,
-	filterMessage: "Your message includes profanity which is **not** allowed!",
-	botInvite: "https://discord.com/oauth2/authorize?client_id=1211784897627168778&permissions=8&scope=bot%20applications.commands",
-	botServerInvite: "https://discord.gg/xcMVwAVjSD",
+	noPerms: `Vous **n'avez pas** les autorisations requises pour utiliser cette commande !`,
+	ownerOnlyCommand: `Cette commande est **uniquement** disponible pour le propriétaire du bot !`,
+	filterMessage: "Votre message contient des grossièretés qui ne sont **pas** autorisées !",
+	botInvite: "https://discord.com/oauth2/authorize?client_id=1403447293105148044&permissions=8&integration_type=0&scope=bot",
+	botServerInvite: "https://discord.gg/rNehbr5f6X",
 
 	noPerms: (missingPerms) => {
 		const formattedPerms = missingPerms
 			.map((perm) => `\`${perm.toString().split("_").join(" ").toLowerCase()}\``)
 			.join(", ");
-		return `You **do not** have the required permissions to use this command!\nMissing Permissions: ${formattedPerms}`;
+		return `Vous **n'avez pas** les autorisations requises pour utiliser cette commande !\nAutorisations manquantes: ${formattedPerms}`;
 	},
 
 	// EMBED COLORS //
@@ -65,50 +65,50 @@ module.exports = {
 	musicEmojiError: "❌",
 
 	// CHANNEL IDS //
-	botLeaveChannel: "1139731092329480332", // Logging channel for bot leaving servers
-	botJoinChannel: "1240480049681928203", // Logging channel for bot joining servers
-	commandErrorChannel: "1240912641719930970", // Logging channel for command errors
-	evalLogsChannel: "1273733451677306880", // Logging channel for eval command
-	dmLoggingChannel: "1362140847210233917", // Logging channel for DMs (when users direct message the bot)
+	botLeaveChannel: "1139731092329480332", // Canal de journalisation pour les bots quittant les serveurs
+	botJoinChannel: "1240480049681928203", // Canal de journalisation pour les robots rejoignant les serveurs
+	commandErrorChannel: "1240912641719930970", // Canal de journalisation des erreurs de commande
+	evalLogsChannel: "1273733451677306880", // Canal de journalisation pour la commande eval
+	dmLoggingChannel: "1362140847210233917", // Canal de journalisation pour les DM (lorsque les utilisateurs envoient un message direct au bot)
 
 	// Ticket Configuration //
 	ticketName: "ticket-",
-	ticketDescription: "🗳️ Ticket has been open by",
-	ticketCreate: "✅ Your ticket has been created",
-	ticketAlreadyExist: "Sorry but you already have a ticket open. If you want to open a new ticket, please close the current one.",
-	ticketNoPermissions: "Sorry, but you **do not** have permission to do this.",
-	ticketError: "Something went wrong, try again later.",
-	ticketMessageTitle: "Welcome, thanks for opening a ticket. Please describe your problem in detail.",
-	ticketMessageDescription: "A member of our moderation team will soon take care of your request.\nThank you for waiting patiently.",
-	ticketMissingPerms: "Sorry, it looks like I am missing the required permissions to do this. Try giving me higher permissions.",
-	ticketClose: "Close",
+	ticketDescription: "🗳️ Le ticket a été ouvert par",
+	ticketCreate: "✅ Votre ticket a été créé",
+	ticketAlreadyExist: "Désolé, mais vous avez déjà un ticket ouvert. Pour en ouvrir un nouveau, veuillez fermer le ticket actuel.",
+	ticketNoPermissions: "Désolé, mais vous n'avez **pas** la permission de faire cela.",
+	ticketError: "Une erreur s'est produite, réessayez plus tard.",
+	ticketMessageTitle: "Bienvenue, merci d'avoir ouvert un ticket. Veuillez décrire votre problème en détail.",
+	ticketMessageDescription: "Un membre de notre équipe de modération prendra bientôt en charge votre demande.\nMerci de patienter.",
+	ticketMissingPerms: "Désolé, il semble que je ne dispose pas des autorisations nécessaires. Essayez de m'accorder des autorisations plus élevées.",
+	ticketClose: "Fermer",
 	ticketCloseEmoji: "📪",
-	ticketLock: "Lock",
+	ticketLock: "Verrouillage",
 	ticketLockEmoji: "🔒",
-	ticketUnlock: "Unlock",
+	ticketUnlock: "Ouvrir",
 	ticketUnlockEmoji: "🔓",
-	ticketClaim: "Claim",
+	ticketClaim: "Réclamer",
 	ticketClaimEmoji: "👋",
-	ticketManage: "Members",
+	ticketManage: "Membres",
 	ticketManageEmoji: "➕",
-	ticketManageMenuTitle: "Choose a member.",
+	ticketManageMenuTitle: "Choisissez un membre.",
 	ticketManageMenuEmoji: "❔",
-	ticketCloseTitle: "This ticket is being closed...",
-	ticketCloseDescription: "Ticket will be closed in 5 seconds.",
-	ticketSuccessLocked: "Ticket was locked successfully.",
-	ticketAlreadyLocked: "This ticket is already locked.",
-	ticketSuccessUnlocked: "Ticket was unlocked successfully.",
-	ticketAlreadyUnlocked: "This ticket is already unlocked.",
-	ticketSuccessClaim: "Ticket was successfully claimed by",
-	ticketAlreadyClaim: "Ticket is already claimed by",
-	ticketDescriptionClaim: ", it was claimed by",
-	ticketTranscriptMember: "Member:",
+	ticketCloseTitle: "Ce ticket est en cours de fermeture...",
+	ticketCloseDescription: "Le ticket sera fermé dans 5 secondes.",
+	ticketSuccessLocked: "Le ticket a été verrouillé avec succès.",
+	ticketAlreadyLocked: "Ce ticket est déjà verrouillé.",
+	ticketSuccessUnlocked: "Le ticket a été déverrouillé avec succès.",
+	ticketAlreadyUnlocked: "Ce ticket est déjà débloqué.",
+	ticketSuccessClaim: "Le ticket a été réclamé avec succès par",
+	ticketAlreadyClaim: "Le ticket est déjà réclamé par",
+	ticketDescriptionClaim: ", il a été affirmé par",
+	ticketTranscriptMember: "Membre:",
 	ticketTranscriptTicket: "Ticket:",
-	ticketTranscriptClaimed: "Claimed:",
-	ticketTranscriptModerator: "Moderator:",
-	ticketTranscriptTime: "Time:",
-	ticketMemberAdd: "has been added to the ticket.",
-	ticketMemberRemove: "has been removed from the ticket.",
+	ticketTranscriptClaimed: "Réclamé:",
+	ticketTranscriptModerator: "Modérateur",
+	ticketTranscriptTime: "Heure:",
+	ticketMemberAdd: "a été ajouté au ticket.",
+	ticketMemberRemove: "a été supprimé du ticket.",
 
 	// AI Chat Models //
 	aiChatChannelModel: "mistral-large-latest",
