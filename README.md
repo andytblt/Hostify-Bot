@@ -90,7 +90,7 @@ Avec plus de 100 commandes slash et plus de 50 commandes préfixes, Hostify est 
 
 1. Forker le projet Github :
 1. Inscrivez-vous / Connectez-vous à [GitHub](https://github.com/).
-2. Accédez à [Hostify](https://github.com/andytblt/hostify).
+2. Accédez à [Hostify](https://github.com/andytblt/Hostify-Bot).
 3. Cliquez sur « Star » pour soutenir le développement.
 4. Cliquez sur « Fork » pour copier tout le code dans votre propre dépôt.
 
