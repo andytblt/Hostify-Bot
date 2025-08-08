@@ -20,22 +20,22 @@ const gitLogDescription = `${color.darkGrey}`;
 
 const commit = async () => {
 	const types = [
-		{ type: "feat", description: "A new feature" },
-		{ type: "fix", description: "A bug fix" },
-		{ type: "docs", description: "Documentation changes" },
-		{ type: "style", description: "Code style changes (formatting, etc)" },
-		{ type: "refactor", description: "Code refactoring with no feature changes" },
-		{ type: "perf", description: "Performance improvements" },
-		{ type: "test", description: "Adding or updating tests" },
-		{ type: "chore", description: "Maintenance tasks, dependency updates, etc" },
-		{ type: "add", description: "Adding new features or files" },
-		{ type: "update", description: "Updating existing features or files" },
-		{ type: "remove", description: "Removing features or files" }
+		{ type: "feat", description: "Une nouvelle fonctionnalité" },
+		{ type: "fix", description: "Une correction de bug" },
+		{ type: "docs", description: "Modifications de la documentation" },
+		{ type: "style", description: "Modifications du style de code (formatage, etc.)" },
+		{ type: "refactor", description: "Refactorisation de code sans modification des fonctionnalités" },
+		{ type: "perf", description: "Améliorations des performances" },
+		{ type: "test", description: "Ajout ou mise à jour de tests" },
+		{ type: "chore", description: "Tâches de maintenance, mises à jour des dépendances, etc." },
+		{ type: "add", description: "Ajout de nouvelles fonctionnalités ou de nouveaux fichiers" },
+		{ type: "update", description: "Mise à jour des fonctionnalités ou des fichiers existants" },
+		{ type: "remove", description: "Suppression de fonctionnalités ou de fichiers" }
 	];
 
 	let selectedType;
 	while (!selectedType) {
-		console.log(`${gitLog} ${color.green}\x1b[1mSelect the type of change\x1b[0m:${color.reset}`);
+		console.log(`${gitLog} ${color.green}\x1b[1mSélectionnez le type de changement\x1b[0m:${color.reset}`);
 		types.forEach((item, index) => {
 			console.log(
 				`${gitLog} ${color.green}[${index + 1}]. \x1b[4m${item.type}\x1b[0m${color.reset} - ${gitLogDescription}*${
@@ -44,34 +44,34 @@ const commit = async () => {
 			);
 		});
 
-		const typeIndex = await askQuestion(`${gitLog} Enter the number corresponding to the type of change: `);
+		const typeIndex = await askQuestion(`${gitLog} Entrez le numéro correspondant au type de changement: `);
 		selectedType = types[parseInt(typeIndex) - 1];
 
 		if (!selectedType) {
 			console.error(
-				`${gitLogError} ${color.red}Invalid selection. Please choose a valid type for your change.${color.reset}`,
+				`${gitLogError} ${color.red}Sélection invalide. Veuillez choisir un type de modification valide..${color.reset}`,
 			);
 		}
 	}
 
-	let message = await askQuestion(`${gitLog} Enter the commit message: `);
+	let message = await askQuestion(`${gitLog} Entrez le message de validation: `);
 	message = message.charAt(0).toUpperCase() + message.slice(1);
 
 	const confirmation = await askQuestion(
-		`${gitLog} Are you \x1b[1msure\x1b[0m you want to commit with message ${color.green}"\x1b[4m${selectedType.type}: ${message}\x1b[0m${color.green}"${color.reset}? (${color.green}YES${color.reset}/${color.torquise}no${color.reset}, default is ${color.green}YES${color.reset}): `,
+		`${gitLog} Are you \x1b[1msure\x1b[0m vous souhaitez vous engager avec un message ${color.green}"\x1b[4m${selectedType.type}: ${message}\x1b[0m${color.green}"${color.reset}? (${color.green}YES${color.reset}/${color.torquise}no${color.reset}, default is ${color.green}OUI${color.reset}): `,
 	);
 
-	if (confirmation.toLowerCase() === "no") {
-		console.log(`${gitLogError} ${color.red}Commit aborted.${color.reset}`);
+	if (confirmation.toLowerCase() === "non") {
+		console.log(`${gitLogError} ${color.red}Validation abandonnée.${color.reset}`);
 		process.exit(0);
 	} else {
 		console.log(
-			`${gitLog} Committing with message ${color.green}"\x1b[4m\x1b[1m${selectedType.type}: ${message}\x1b[0m\x1b[0m${color.green}"${color.reset}...`,
+			`${gitLog} S'engager avec un message ${color.green}"\x1b[4m\x1b[1m${selectedType.type}: ${message}\x1b[0m\x1b[0m${color.green}"${color.reset}...`,
 		);
 		exec(`git commit -m "${selectedType.type}: ${message}"`, (error, stdout, stderr) => {
 			if (error) {
 				console.error(
-					`${gitLogError} ${color.red}Error: ${error.message} \n${gitLogError}${color.red} One reason for this could be because your files aren't being tracked. To add in your file, please use "git add <file>" or "git add ."${color.reset}`,
+					`${gitLogError} ${color.red}Error: ${error.message} \n${gitLogError}${color.red} Cela peut être dû au fait que vos fichiers ne sont pas suivis. Pour ajouter votre fichier, utilisez « git add <fichier> » ou « git add ."${color.reset}`,
 				);
 				return;
 			}
