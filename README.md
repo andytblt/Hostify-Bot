@@ -1,270 +1,230 @@
-<!--     ████████╗███████╗███████╗████████╗██╗███████╗██╗   ██╗
-         ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██║██╔════╝╚██╗ ██╔╝
-            ██║   █████╗  ███████╗   ██║   ██║█████╗   ╚████╔╝
-            ██║   ██╔══╝  ╚════██║   ██║   ██║██╔══╝    ╚██╔╝
-            ██║   ███████╗███████║   ██║   ██║██║        ██║
-            ╚═╝   ╚══════╝╚══════╝   ╚═╝   ╚═╝╚═╝        ╚═╝    -->
-
-<img align="center" alt="Nub Bot banner" src="https://i.postimg.cc/v87R8PSx/test.png">
-
-<p align="center">
-<img align="center" alt="GitHub Issues" src="https://img.shields.io/github/issues/Kkkermit/Testify?style=for-the-badge"> 
-<img align="center" alt="GitHub license" src="https://img.shields.io/github/license/Kkkermit/Testify?style=for-the-badge">
-<img align="center" alt="GitHub Stars" src="https://img.shields.io/github/stars/Kkkermit/Testify?style=for-the-badge">
-<img align="center" alt="GitHub Forks" src="https://img.shields.io/github/forks/Kkkermit/Testify?style=for-the-badge">
-<img align="center" alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Kkkermit/Testify.svg?style=for-the-badge">
-</p>
-
-<p align="center">
-<img align="center" alt="GitHub Watchers" src="https://img.shields.io/github/watchers/Kkkermit/Testify?style=for-the-badge">
-<img align="center" alt="GitHub Workflow" src="https://img.shields.io/github/actions/workflow/status/Kkkermit/Testify/run-tests.yml?style=for-the-badge">
-<img align="center" alt="GitHub Commits-Since" src="https://img.shields.io/github/commits-since/Kkkermit/Testify/latest?style=for-the-badge">
-<img align="center" alt="GitHub Version" src="https://img.shields.io/github/package-json/v/Kkkermit/Testify?style=for-the-badge">
-</p>
-
-<p align="center">
-  <a href="https://buymeacoffee.com/kkermit" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="60px" width="217px">
-  </a>
-</p>
+<!--     ██╗  ██╗  ██████╗  ███████╗ ████████╗ ██╗ ███████╗ ██╗   ██╗
+         ██║  ██║ ██╔═████╗ ██╔════╝ ╚══██╔══╝ ██║ ██╔════╝ ╚██╗ ██╔╝
+         ███████║ ██╔═████╗ ███████╗    ██║    ██║ █████╗    ╚████╔╝ 
+         ██╔══██║ ██║██╔██║ ╚════██║    ██║    ██║ ██╔══╝     ╚██╔╝  
+         ██║  ██║ ████╔╝██║ ███████║    ██║    ██║ ██║         ██║   
+         ╚═╝  ╚═╝ ╚██████╔╝ ╚══════╝    ╚═╝    ╚═╝ ╚═╝         ╚═╝   -->
 
 
 <p align="center"><strong>
-Advanced all-in-one discord bot with prefix & slash commands
+Bot Discord avancé tout-en-un avec commandes préfixe et slash
 </strong></p>
 
 <p align="center">
-With over 100 slash commands and over 50 prefix commands, Testify is an open source discord bot that's easy to set up and use and full of fun features for your servers!
+Avec plus de 100 commandes slash et plus de 50 commandes préfixes, Hostify est un bot Discord open source facile à configurer et à utiliser et plein de fonctionnalités amusantes pour vos serveurs !
 </p>
 
-> To test out Testify, be sure to invite him to your server by clicking [here](https://discord.com/oauth2/authorize?client_id=1211784897627168778&permissions=8&scope=applications.commands%20bot)
+> Hostify ses pas seulement un bot mais aussi un service d'hergement complet rejoind le discord pour en savoir plus [Rejoindre le Discord ici](https://discord.gg/y8AtUhpyrNehbr5f6X)
 
 > [!CAUTION]
-> **Never share or commit your `.env` file or any of its values!** These contain sensitive information including your bot token, MongoDB credentials, and API keys that could be used to compromise your systems or incur unwanted charges if leaked. Always add `.env` to your `.gitignore` file.
-
-## Table of Contents
-- [Features](#features)
-- [Compatibility](#compatibility)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Command Categories](#command-categories)
-- [Setting-Audit-Logs](#Setting-up-audit-logs)
-- [Technical Features](#technical-features)
-- [Contributors](#contributors)
-- [Support](#support)
-- [License](#license)
+> **Ne partagez et ne validez jamais votre fichier « .env » ni aucune de ses valeurs !** Ceux-ci contiennent des informations sensibles, comme votre jeton de bot, vos identifiants MongoDB et vos clés API, qui pourraient être utilisées pour compromettre vos systèmes ou engendrer des frais indésirables en cas de fuite. Ajoutez toujours « .env » à votre fichier « .gitignore »..
 
 <h1 align="center"><strong>
-⭐ If you're a fan of this repository or have used it or any of its code, please consider leaving us a star. It would be greatly appreciated and allows us to see if users value the bot! ⭐
+⭐⭐
 </strong></h1>
 
-## Features
 
 ### Moderation Tools
-- **Complete Moderation Suite**: Ban, kick, timeout, warn, and mute functionality
-- **Auto-moderation**: Filter profanity, spam, and inappropriate content
-- **Audit Logging**: Comprehensive logging of all moderation actions
-- **Ticket System**: Create and manage support tickets with transcripts
+- **Suite de modération complète** : fonctionnalités d'interdiction, d'expulsion, de temporisation, d'avertissement et de mise en sourdine
+- **Auto-modération** : filtrez les grossièretés, les spams et les contenus inappropriés
+- **Journalisation d'audit** : journalisation complète de toutes les actions de modération
+- **Système de tickets** : créez et gérez des tickets d'assistance avec des transcriptions
 
-### Entertainment & Fun
-- **Music System**: Play music from YouTube, Spotify, and SoundCloud with queue management
-- **Leveling System**: XP and ranking system with customizable rewards
-- **Mini-games**: Variety of games including RPS, coinflip, 8ball, and more
-- **Meme Commands**: Random memes, jokes, and fun interactions
+### Divertissement et plaisir
+- **Système musical** : Écoutez de la musique depuis YouTube, Spotify et SoundCloud avec gestion de file d'attente
+- **Système de niveaux** : Système d'XP et de classement avec récompenses personnalisables
+- **Mini-jeux** : Variété de jeux, dont RPS, pile ou face, 8ball, et plus encore
+- **Commandes mèmes** : Mèmes aléatoires, blagues et interactions amusantes
 
-### Information & Utility
-- **User Info**: Detailed user information with profile cards
-- **Server Info**: Server statistics and information
-- **Role Info**: Detailed role information including permissions
-- **Profile System**: Create and customize user profiles
+### Informations et utilité
+- **Informations utilisateur** : Informations utilisateur détaillées avec fiches de profil
+- **Informations serveur** : Statistiques et informations du serveur
+- **Informations rôle** : Informations détaillées sur les rôles, y compris les autorisations
+- **Système de profils** : Création et personnalisation de profils utilisateur
 
-### Integration & API Features
-- **Valorant Integration**: View skins, store, and player info
-- **Instagram Notifications**: Get notified of new posts from Instagram accounts
-- **Spotify Integration**: Advanced Spotify tracking and integration
-- **Weather Information**: Get weather forecasts for any location
+### Intégration et fonctionnalités API
+- **Intégration Valorant** : Affichage des skins, de la boutique et des informations sur les joueurs
+- **Notifications Instagram** : Soyez informé des nouvelles publications des comptes Instagram
+- **Intégration Spotify** : Suivi et intégration Spotify avancés
+- **Informations météo** : Consultez les prévisions météo pour n'importe quel endroit
 
-### Customization
-- **Custom Prefix**: Set a custom prefix for your server
-- **Custom Embeds**: Create and customize rich embeds
-- **Announcement System**: Create professional announcements
-- **Thread Management**: Create and manage threads
+### Personnalisation
+- **Préfixe personnalisé** : définissez un préfixe personnalisé pour votre serveur
+- **Intégrations personnalisées** : créez et personnalisez des intégrations enrichies
+- **Système d'annonces** : créez des annonces professionnelles
+- **Gestion des fils de discussion** : créez et gérez les fils de discussion
 
-## Compatibility
+## Compatibilité
 
 ### System Requirements
 
-| Operating System | Support Status | Notes |
+| Système d'exploitation | État du support | Notes |
 |------------------|---------------|-------|
-| Windows 11       | ✅ Full Support | Recommended for development |
-| Windows 10       | ✅ Full Support | Recommended for development |
-| macOS            | ✅ Full Support | Tested on macOS Ventura+ |
-| Linux (Ubuntu)   | ✅ Full Support | Tested on Ubuntu 20.04 LTS+ |
-| Linux (Debian)   | ✅ Full Support | Tested on Debian 11+ |
-| Linux (CentOS)   | ✅ Full Support | Tested on CentOS 8+ |
-| Linux (Fedora)   | ✅ Full Support | Tested on Fedora 34+ |
+| Windows 11 | ✅ Support complet | Recommandé pour le développement |
+| Windows 10 | ✅ Support complet | Recommandé pour le développement |
+| macOS | ✅ Support complet | Testé sur macOS Ventura+ |
+| Linux (Ubuntu) | ✅ Support complet | Testé sur Ubuntu 20.04 LTS+ |
+| Linux (Debian) | ✅ Support complet | Testé sur Debian 11+ |
+| Linux (CentOS) | ✅ Support complet | Testé sur CentOS 8+ |
+| Linux (Fedora) | ✅ Support complet | Testé sur Fedora 34+ |
 
-### Node.js Support
+### Support Node.js
 
-| Node.js Version | Support Status | Notes |
+| Version Node.js | État du support | Notes |
 |-----------------|---------------|-------|
-| v18.13.0+       | ✅ Supported | Minimum required version |
-| v19.x           | ✅ Supported | |
-| v20.x           | ✅ Supported | Recommended for best performance |
-| v21.x           | ✅ Supported | Latest features |
+| v18.13.0+ | ✅ Pris en charge | Version minimale requise |
+| v19.x | ✅ Pris en charge | |
+| v20.x | ✅ Pris en charge | Recommandé pour des performances optimales |
+| v21.x | ✅ Pris en charge | Dernières fonctionnalités |
 
 > [!IMPORTANT]
-> **If you're struggling to use a certain node version, I'd suggest either downgrading or upgrading your version using nvm**
-> To install nvm, please follow this [**link**](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/).
+> **Si vous rencontrez des difficultés avec une version de Node, je vous suggère de la rétrograder ou de la mettre à niveau via NVM**
+> Pour installer NVM, veuillez suivre ce [**lien**](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/).
 
 ## Installation
-- Download [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
-- Download [Visual Studio Code](https://code.visualstudio.com/download).
+- Téléchargez [Node.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
+- Téléchargez [Visual Studio Code](https://code.visualstudio.com/download).
 
-## Usage
-- **Project Setup**
+## Utilisation
+- **Configuration du projet**
 
-    1. Fork the Github project :
-       1. Sign up / Sign in to [GitHub](https://github.com/).
-       2. Navigate to [Testify](https://github.com/Kkkermit/Testify).
-       3. Click `Star` to support development.
-       4. Click `Fork` to copy all code to your own repository.
-   
-    2. Click the `Code` button. From the drop-down that appears, click `Download ZIP` to download the entire repository as a ZIP folder.
+1. Forker le projet Github :
+1. Inscrivez-vous / Connectez-vous à [GitHub](https://github.com/).
+2. Accédez à [Hostify](https://github.com/andytblt/hostify).
+3. Cliquez sur « Star » pour soutenir le développement.
+4. Cliquez sur « Fork » pour copier tout le code dans votre propre dépôt.
 
-    3. Extract the files to a new folder and open it with [Visual Studio Code](https://code.visualstudio.com/download).
+2. Cliquez sur le bouton « Code ». Dans le menu déroulant qui apparaît, cliquez sur « Télécharger le fichier ZIP » pour télécharger l'intégralité du dépôt sous forme de dossier ZIP.
 
-
-- **Obtain Discord Bot Token**
-
-    1. Sign in to [Discord Developer Portal](https://discord.com/developers/applications).
-
-    2. Create a bot :
-        1. Enter the left side `Applications`.
-        2. Click `New Application` in the upper right corner and enter the name of the bot. After confirmation, enter the new page.
-        3. Click on the left side `Bot`.
-        4. Enable all intents listed under `Privileged Gateway Intents` and click `Save Changes`.
-        5. View and copy the token by clicking the `Reset Token` button.
-   
-    3. Set up OAuth2 :
-        1. Click on `OAuth2` in the left column.
-        2. Click on `URL Generator` in the left column.
-        3. In the right column, select `bot` and `applications.commands` under `SCOPES`.
-        4. Scroll down and select `Administrator` under `BOT PERMISSIONS`.
-        5. Copy the URL at the bottom and paste it into your browser.
-        6. Choose the server you want to add the bot to and click `Continue` > `Authorize`.
+3. Extrayez les fichiers dans un nouveau dossier et ouvrez-le avec [Visual Studio Code](https://code.visualstudio.com/download).
 
 
-- **Obtain MongoDB Connection String**
+**Obtenir un jeton de bot Discord**
 
-    1. Sign up / Sign in to [MongoDB](https://www.mongodb.com).
-    2. Choose your preferred cloud database plan.
-    3. Customize the cluster settings to your preference and click `Create Cluster`.
-    4. Navigate to the `Network Access` page, click `Add IP Address` and select `Allow access from anywhere`.
-    5. Navigate back to the `Database` page and click `Connect`.
-    6. Create a `database user`, click `Choose a connection method` and select `Connect your application`.
-    7. Copy your connection string and replace `<password>` with the password for the database user that you created earlier.
+1. Connectez-vous au [Portail des développeurs Discord](https://discord.com/developers/applications).
 
+2. Créer un bot :
+1. Accédez à « Applications » à gauche.
+2. Cliquez sur « Nouvelle application » en haut à droite et saisissez le nom du bot. Après confirmation, accédez à la nouvelle page.
+3. Cliquez sur « Bot » à gauche.
+4. Activez toutes les intentions répertoriées sous « Intentions de passerelle privilégiée » et cliquez sur « Enregistrer les modifications ».
+5. Affichez et copiez le jeton en cliquant sur le bouton « Réinitialiser le jeton ».
 
-- **Setting up the env file**
-
-    *If you go along with this, you can ignore the parts in the `Project Execution` that explain how to generate and fill in the `.env`*
-
-    1. For easy setup of the env files, ( `.env` & `.development.env` ) you can run the command `npm run setup-env:prod`
-    2. Once you've ran the command, it generates a script in the console
-    3. You need to then fill out the fields in the console. Fields marked with the text **"Required"** are you required fields and you need to fill those ones in. The script will not continue if you ignore to fill in those fields. 
-    4. Once you've filled in the field, it will write those fields into and generate the `.env`.
-    5. Alternatively, you can ignore this and fill in the fields yourself by viewing the `.example.env` file.
-    6. If you then want to setup the `.env.development` file, you can run the command `npm run setup-env:dev` and follow the steps above again.
+3. Configurer OAuth2 :
+1. Cliquez sur « OAuth2 » dans la colonne de gauche.
+2. Cliquez sur « Générateur d'URL » dans la colonne de gauche. 3. Dans la colonne de droite, sélectionnez « bot » et « applications.commands » sous « SCOPES ».
+4. Faites défiler vers le bas et sélectionnez « Administrateur » sous « AUTORISATIONS DU BOT ».
+5. Copiez l'URL en bas et collez-la dans votre navigateur.
+6. Choisissez le serveur auquel vous souhaitez ajouter le bot et cliquez sur « Continuer » > « Autoriser ».
 
 
-- **Project Execution**
+- **Obtenir la chaîne de connexion MongoDB**
 
-    1. Rename the filed named `example.env` to `.env`
-    2. Navigate to the `Bot` page on the [Discord Developer Portal](https://discord.com/developers/applications) and click `Reset Token`. Afterwards, create a `.env` file within the root directory.
-    3. Paste your bot token into the `token` variable inside the `.env` file.
-    4. Paste your [MongoDB](https://www.mongodb.com) connection string into the `mongodb` variable inside the `.env` file.
-    5. Navigate to the `OAuth2` page and copy the `CLIENT ID`. 
-    6. Paste your client ID into the `clientid` variable inside the `.env` file.
-    7. Navigate to your discord server, enable developer mode and right click the dropdown beside the server name. 
-    8. Click `Copy Server ID` and paste it into the `guildid` variable inside the `.env` file.
-    9. Visit the [Spotify web API docs](https://developer.spotify.com/documentation/web-api) and sign in. Once signed in, navigate to dashboard. Once on here, you'll need to create an app. Fill out the steps on the site to create your app. Once created, you'll need to copy your clientid and client secret into the `SPOTIFY_CLIENT_ID` & `SPOTIFY_CLIENT_SECRET` fields in the `.env` file. You can leave the `SPOTIFY_REDIRECT_URI` as it is. Only change this if you're updating the port of the Spotify server.
-    10. Navigate to the `package.json` file and pay attention to the runnable commands listed under `scripts`.
-    11. Open the terminal in [Visual Studio Code](https://code.visualstudio.com/download) and install all necessary packages using `npm run setup`. This will install the dependencies and give you a brief install guide
-    12. Open a new terminal and type `npm run prod` to run the file without using **nodemon** or `npm run prod:nodemon` to run the bot with nodemon.
-    13. The bot should then turn online, you should be able to see this by the console logs that is setup upon start up
+1. Inscrivez-vous / Connectez-vous à [MongoDB](https://www.mongodb.com).
+2. Choisissez votre forfait de base de données cloud préféré.
+3. Personnalisez les paramètres du cluster selon vos préférences et cliquez sur « Créer un cluster ».
+4. Accédez à la page « Accès réseau », cliquez sur « Ajouter une adresse IP » et sélectionnez « Autoriser l'accès depuis n'importe quel emplacement ».
+5. Revenez à la page « Base de données » et cliquez sur « Se connecter ».
+6. Créez un « utilisateur de base de données », cliquez sur « Choisir une méthode de connexion » et sélectionnez « Connecter votre application ».
+7. Copiez votre chaîne de connexion et remplacez « <password> » par le mot de passe de l'utilisateur de base de données que vous avez créé précédemment.
 
+
+- **Configuration du fichier d'environnement**
+
+*Si vous suivez cette procédure, vous pouvez ignorer les sections de l'Exécution du projet expliquant comment générer et renseigner le fichier `.env`*.
+
+1. Pour configurer facilement les fichiers d'environnement (`.env` et `.development.env`), exécutez la commande `npm run setup-env:prod`.
+2. Une fois la commande exécutée, un script est généré dans la console.
+3. Vous devez ensuite renseigner les champs de la console. Les champs marqués **"Obligatoire"** sont obligatoires. Le script s'arrêtera si vous ignorez ces champs.
+4. Une fois le champ renseigné, il écrira ces champs dans le fichier `.env` et générera le fichier `.env`.
+5. Vous pouvez également ignorer cette étape et renseigner les champs vous-même en consultant le fichier `.example.env`. 6. Si vous souhaitez ensuite configurer le fichier `.env.development`, vous pouvez exécuter la commande `npm run setup-env:dev` et suivre à nouveau les étapes ci-dessus.
+
+
+- **Exécution du projet**
+
+1. Renommez le fichier « example.env » en « .env ».
+2. Accédez à la page « Bot » du portail des développeurs Discord (https://discord.com/developers/applications) et cliquez sur « Réinitialiser le jeton ». Créez ensuite un fichier « .env » dans le répertoire racine.
+3. Collez votre jeton de bot dans la variable « token » du fichier « .env ».
+4. Collez votre chaîne de connexion [MongoDB] (https://www.mongodb.com) dans la variable « mongodb » du fichier « .env ».
+5. Accédez à la page « OAuth2 » et copiez l'identifiant client (CLIENT ID).
+6. Collez votre identifiant client dans la variable « clientid » du fichier « .env ». 7. Accédez à votre serveur Discord, activez le mode développeur et faites un clic droit sur le menu déroulant à côté du nom du serveur.
+8. Cliquez sur « Copier l'ID du serveur » et collez-le dans la variable « guildid » du fichier « .env ».
+9. Consultez la documentation de l'API web Spotify (https://developer.spotify.com/documentation/web-api) et connectez-vous. Une fois connecté, accédez au tableau de bord. Vous devrez ensuite créer une application. Suivez les étapes indiquées sur le site pour créer votre application. Une fois créée, vous devrez copier votre identifiant client et votre clé secrète client dans les champs « SPOTIFY_CLIENT_ID » et « SPOTIFY_CLIENT_SECRET » du fichier « .env ». Vous pouvez laisser « SPOTIFY_REDIRECT_URI » tel quel. Ne le modifiez que si vous mettez à jour le port du serveur Spotify.
+10. Accédez au fichier « package.json » et prêtez attention aux commandes exécutables répertoriées sous « scripts ».
+11. Ouvrez le terminal dans [Visual Studio Code](https://code.visualstudio.com/download) et installez tous les packages nécessaires avec « npm run setup ». Cela installera les dépendances et vous donnera un bref guide d'installation.
+12. Ouvrez un nouveau terminal et saisissez « npm run prod » pour exécuter le fichier sans utiliser **nodemon** ou « npm run prod:nodemon » pour exécuter le bot avec nodemon.
+13. Le bot devrait alors se connecter, comme le montrent les journaux de la console configurés au démarrage.
 - **Runnable commands (scripts)**
 
-   **Wipe Database** - <br>
-   To wipe the database that is connected via your mongoDB url, you can run the command `npm run wipe-data:prod`, this brings up a menu which you can follow in order to either wipe the entire database from all it's data, or wipe all the data from individual schemas. 
+**Effacer la base de données** - <br>
+Pour effacer la base de données connectée via votre URL MongoDB, exécutez la commande « npm run wipe-data:prod ». Un menu s'affiche alors pour effacer toutes les données de la base de données ou celles des schémas individuels.
 
-   **Update Packages** - <br>
-   To update all your dependencies, you can run the command `npm run update-packages`, this cycles through the dependencies and updates one's which are out of date.
+**Mettre à jour les packages** - <br>
+Pour mettre à jour toutes vos dépendances, exécutez la commande « npm run update-packages ». Cette commande parcourt les dépendances et met à jour celles qui sont obsolètes.
 
-   **update-ytdl-core** - <br>
-   To update the version of the `ytdl-core` package, you can run the command `npm run update-ytdl-core`, this updates the package to the most recent version to ensure the music system works.
+**update-ytdl-core** - <br>
+Pour mettre à jour la version du package « ytdl-core », exécutez la commande « npm run update-ytdl-core ». Cette commande met à jour le package vers la version la plus récente afin de garantir le bon fonctionnement du système musical.
 
-   **setup-env:prod** - <br>
-   To run the setup of the `.env` file you can run the command `npm run setup-env:prod`, this generates a script in the console that generates a `.env` file and where you fill out the fields with whats required for the `.env` file and it writes it in the file.
+**setup-env:prod** - <br>
+Pour exécuter l'installation du fichier `.env`, exécutez la commande `npm run setup-env:prod`. Cela génère un script dans la console qui génère un fichier `.env`. Vous y renseignez les champs requis et l'enregistre dans le fichier.
 
-   **setup-env:dev** - <br>
-   To run the setup of the `.env.development` file you can run the command `npm run setup-env:dev`, this generates a script in the console that generates a `.env.development` file and where you fill out the fields with whats required for the `.env.development` file and it writes it in the file.
+**setup-env:dev** - <br>
+Pour exécuter la configuration du fichier `.env.development`, exécutez la commande `npm run setup-env:dev`. Un script est alors généré dans la console. Ce script génère un fichier `.env.development`. Vous y renseignez les champs requis et l'enregistre.
 
-   **log-setup** - <br>
-   To run the setup of the colored logs in the `discord-logs` module. This saves you from manually doing the below method [Setting-up-audit-logs](#setting-up-audit-logs)
+**log-setup** - <br>
+Pour exécuter la configuration des journaux colorés dans le module `discord-logs`, vous évitez d'utiliser manuellement la méthode ci-dessous [Setting-up-audit-logs](#setting-up-audit-logs).
 
-   **codebase-info** - <br>
-   This displays some info of the codebase like how many lines of code are in the src directory, how many comments and how many files there are.
+**codebase-info** - <br>
+Cette commande affiche des informations sur la base de code, comme le nombre de lignes de code présentes dans le répertoire src, le nombre de commentaires et le nombre de fichiers.
 
-## Command Categories
+## Catégories de commandes
 
-### Slash Command Categories
+### Catégories de commandes Slash
 
-| Category Name | Description |
+| Nom de la catégorie | Description |
 |--------------|-------------|
-| AiCommands | AI-based commands for chat responses, image generation and analysis |
-| AuditLogging | Configuration for server audit logging |
-| Automod | Automated moderation tools to filter content |
-| Community | General utility commands for the community |
-| Devs | Developer-specific tools and utilities |
-| Economy | Currency and economic system commands |
-| Fun | Entertainment and amusement commands |
-| Giveaway | Tools for running server giveaways |
-| Help | Documentation and assistance commands |
-| InfoCommands | Information retrieval tools |
-| InstaNotification | Instagram post tracking system |
-| LevelAndEconomy | Experience and economy management |
-| LevelSystem | User level progression system |
-| MiniGames | Various interactive games |
-| Other | Miscellaneous commands |
-| Owner | Bot owner administration commands |
-| PrefixSettings | Configuration for custom prefixes |
-| Profile | User profile management system |
-| Spotify | Spotify integration and tracking |
-| Valorant | Valorant game information and tracking |
+| AiCommands | Commandes basées sur l'IA pour les réponses au chat, la génération et l'analyse d'images |
+| AuditLogging | Configuration de la journalisation d'audit du serveur |
+| Automod | Outils de modération automatisés pour filtrer le contenu |
+| Communauté | Commandes utilitaires générales pour la communauté |
+| Développeurs | Outils et utilitaires spécifiques aux développeurs |
+| Économie | Commandes de monnaie et de système économique |
+| Divertissement | Commandes de divertissement |
+| Concours | Outils pour organiser des concours sur le serveur |
+| Aide | Commandes de documentation et d'assistance |
+| InfoCommands | Outils de recherche d'informations |
+| InstaNotification | Système de suivi des publications Instagram |
+| LevelAndEconomy | Gestion de l'expérience et de l'économie |
+| LevelSystem | Système de progression des niveaux utilisateur |
+| MiniGames | Divers jeux interactifs |
+| Autre | Commandes diverses |
+| Propriétaire | Commandes d'administration du propriétaire du bot |
+| Paramètres des préfixes | Configuration des préfixes personnalisés |
+| Profil | Système de gestion des profils utilisateurs |
+| Spotify | Intégration et suivi Spotify |
+| Valorant | Informations et suivi du jeu Valorant |
 
-### Prefix Command Categories
+### Catégories de commandes préfixes
 
-| Category Name | Description |
+| Nom de la catégorie | Description |
 |--------------|-------------|
-| Dev | Developer-specific tools and debug commands |
-| EconomyCommands | Currency system management commands |
-| FunCommands | Entertainment and amusing interactions |
-| InfoCommands | Information retrieval commands |
-| LevelCommands | User progression and level management |
-| ModerationCommands | Server moderation and administration tools | 
-| Music | Audio playback and music commands |
-| OwnerCommands | Bot owner-only administrative commands |
-| TestCommands | Testing and experimental features |
-| UtilityCommands | General utility and helper commands |
+| Dev | Outils et commandes de débogage spécifiques aux développeurs |
+| EconomyCommands | Commandes de gestion du système monétaire |
+| FunCommands | Divertissement et interactions amusantes |
+| InfoCommands | Commandes de recherche d'informations |
+| LevelCommands | Progression de l'utilisateur et gestion des niveaux |
+| ModerationCommands | Outils de modération et d'administration du serveur |
+| Music | Commandes de lecture audio et de musique |
+| OwnerCommands | Commandes d'administration réservées aux propriétaires de bots |
+| TestCommands | Fonctionnalités de test et expérimentales |
+| UtilityCommands | Commandes utilitaires et d'assistance générales |
 
-## Setting-up-audit-logs
+## Configuration des journaux d'audit
 
-To set the advanced logs registry for the Testify audit-logs ( the event handler registers ) than follow this!
+Pour configurer le registre des journaux avancés pour les journaux d'audit de Testify (registres du gestionnaire d'événements), procédez comme suit :
 
-   1. Navigate to `node_modules` **=>** `discord-logs` **=>** `lib` **=>** `index.js` 
-   2. Once in the `index.js` file for the discord logs package you'll want to **copy and paste** this code in below.
+1. Accédez à `node_modules` **=>** `discord-logs` **=>** `lib` **=>** `index.js`
+2. Une fois dans le fichier `index.js` du package des journaux Discord, copiez et collez le code ci-dessous.
 
    ```js
     "use strict";
@@ -389,64 +349,37 @@ To set the advanced logs registry for the Testify audit-logs ( the event handler
         }
     });
    ```
-   3. This code makes the logs register like so this image below <img align="center" alt="Audit-logs" src="https://i.postimg.cc/NMJfsy0V/Screenshot-2024-10-07-184919.png">
-   4. To update the color of the logs, you can change the part `${color.pink}` to the color you'd like which are defined in the color variable. 
-   5. That should be it, now when you start up the bot, it should look all cool 😎
+3. Ce code enregistre les journaux comme dans l'image ci-dessous <img align="center" alt="Audit-logs" src="https://i.postimg.cc/NMJfsy0V/Screenshot-2024-10-07-184919.png">
+4. Pour mettre à jour la couleur des journaux, vous pouvez modifier la partie « ${color.pink} » avec la couleur souhaitée, définie dans la variable color.
+5. Voilà ! Au démarrage du bot, il devrait être impeccable !
 
-## Technical Features
+## Fonctionnalités techniques
 
-### Console Logger
-- **Discord Webhook Integration**: All console output is sent to a Discord webhook for remote monitoring
-- **Rate Limiting**: Intelligent handling of Discord API rate limits to prevent errors
-- **Message Batching**: Efficiently batches messages to reduce API calls
-- **Error Handling**: Robust error handling with proper logging
+### Journalisation de la console
+- **Intégration du webhook Discord** : Toutes les sorties de la console sont envoyées à un webhook Discord pour une surveillance à distance
+- **Limitation de débit** : Gestion intelligente des limites de débit de l'API Discord pour éviter les erreurs
+- **Traitement par lots des messages** : Traitement efficace des messages par lots pour réduire les appels d'API
+- **Gestion des erreurs** : Gestion robuste des erreurs avec journalisation appropriée
 
-### Database Integration
-- **MongoDB Integration**: Complete database integration for persistent data storage
-- **Schema System**: Well-organized schema system for all bot functionality
-- **Data Management**: Tools for data management and backup
+### Intégration de la base de données
+- **Intégration MongoDB** : Intégration complète de la base de données pour un stockage persistant des données
+- **Système de schéma** : Système de schéma bien organisé pour toutes les fonctionnalités du bot
+- **Gestion des données** : Outils de gestion et de sauvegarde des données
 
-### API Integrations
-- **Valorant API**: Integration with Valorant API for game data
-- **Spotify API**: Integration with Spotify API for music data
-- **Instagram API**: Integration for tracking Instagram posts
-- **Weather API**: Integration for weather forecasts
+### Intégrations API
+- **API Valorant** : Intégration à l'API Valorant pour les données de jeu
+- **API Spotify** : Intégration à l'API Spotify pour les données musicales
+- **API Instagram** : Intégration pour le suivi des publications Instagram
+- **API Météo** : Intégration pour les prévisions météo
 
-### Performance Optimization
-- **Command Handler**: Efficient command handling for both prefix and slash commands
-- **Event Manager**: Comprehensive event management system
-- **Process Management**: Proper handling of process events and termination
-
-## Contributors
-
-<p align="center">Thank you to all the amazing people who have contributed to Testify!</p>
-
-<p align="center">
-  <a href="https://github.com/Kkkermit/Testify/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=Kkkermit/Testify" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Kkkermit/Testify/graphs/contributors">View all contributors</a>
-</p>
+### Optimisation des performances
+- **Gestionnaire de commandes** : Gestion efficace des commandes avec préfixe et barre oblique
+- **Gestionnaire d'événements** : Système complet de gestion des événements
+- **Gestion des processus** : Gestion efficace des événements et de leur terminaison
 
 ## Support
 
-Connect with us on [Discord](https://discord.gg/xcMVwAVjSD) for support / any related inquiry.
-
-## Star History
-
-<div align="center">
- <a href="https://www.star-history.com/#Kkkermit/Testify&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Kkkermit/Testify&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Kkkermit/Testify&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Kkkermit/Testify&type=Date" />
-  </picture>
- </a>
-</div>
-
+Connectez-vous avec nous sur [Discord](https://discord.gg/rNehbr5f6X) pour obtenir de l'aide / toute demande connexe.
 
 ## License
 Released under the terms of [MIT License](https://github.com/Kkkermit/Testify/blob/main/LICENSE) license.
