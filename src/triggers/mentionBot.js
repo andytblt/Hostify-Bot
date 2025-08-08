@@ -27,7 +27,7 @@ module.exports = {
 
             const pingEmbed = new EmbedBuilder()
             .setColor("Purple")
-            .setTitle("🏓 • Who mentioned me??")
+            .setTitle("🏓 • Qui m'a mentionné ?")
             .setDescription(`Salut **${message.author.username}**!, voici quelques informations utiles sur moi.\n ⁉️ • **Comment afficher toutes les commandes ?**\nSoit utiliser **/help-manual** ou faites / pour voir une liste de toutes les commandes !`)
             .addFields({ name: '**🌐 • Website:**', value: 'https://hostify-be.fr/'})
             .addFields({ name: `**🏡 • Servers:**`, value: `${client.guilds.cache.size}`, inline: true })
