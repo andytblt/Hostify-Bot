@@ -41,7 +41,7 @@ class ConsoleLogger {
 			console.warn(
 				`${
 					color.yellow
-				}[${getTimestamp()}] [CONSOLE_LOGGER] No webhook URL provided. Console logging to Discord disabled.${
+				}[${getTimestamp()}] [CONSOLE_LOGGER] Aucune URL de webhook fournie. Journalisation de la console sur Discord désactivée.${
 					color.reset
 				}`,
 			);
@@ -101,7 +101,7 @@ class ConsoleLogger {
 		});
 
 		process.on("SIGINT", () => {
-			this.captureLog("Bot process terminated by SIGINT signal", "warn");
+			this.captureLog("Processus du bot terminé par un signal SIGINT", "warn");
 			this.flushBuffer(true);
 			process.exit();
 		});
@@ -110,7 +110,7 @@ class ConsoleLogger {
 		this.captureLog(
 			`${
 				color.green
-			}[${getTimestamp()}] [CONSOLE_LOGGER] Console logger initialized. Logs will be sent to Discord webhook.${
+			}[${getTimestamp()}] [CONSOLE_LOGGER] Journal de la console initialisé. Les journaux seront envoyés au webhook Discord..${
 				color.reset
 			}`,
 			"info",
@@ -140,7 +140,7 @@ class ConsoleLogger {
 				`[${new Date(timestamp).toISOString()}] [${level.toUpperCase()}] ${message}\n`,
 			);
 		} catch (err) {
-			process.stderr.write(`Failed to write to log file: ${err}\n`);
+			process.stderr.write(`Échec de l'écriture dans le fichier journal: ${err}\n`);
 		}
 
 		this.logBuffer.push({ message, level, timestamp });
@@ -239,8 +239,8 @@ class ConsoleLogger {
 		}
 
 		const payload = {
-			username: "Testify Console Logger",
-			avatar_url: "https://i.postimg.cc/KznLsF43/Testi-1.png",
+			username: "Hostify Console Logger",
+			avatar_url: "",
 			content: "```\n" + content + "\n```",
 		};
 
@@ -285,7 +285,7 @@ class ConsoleLogger {
 			if (now - this.rateLimit.lastErrorLog > 60000) {
 				this.stdout.call(
 					process.stdout,
-					`${color.red}[${getTimestamp()}] [CONSOLE_LOGGER] Error sending logs: ${error.message}${color.reset}\n`,
+					`${color.red}[${getTimestamp()}] [CONSOLE_LOGGER] Erreur lors de l'envoi des journaux: ${error.message}${color.reset}\n`,
 				);
 				this.rateLimit.lastErrorLog = now;
 			}
@@ -312,5 +312,5 @@ module.exports = {
 
 if (require.main === module) {
 	consoleLogger.setup();
-	console.log("Console logger started. All console output will be sent to the Discord webhook.");
+	console.log("L'enregistreur de console a démarré. Toutes les sorties de la console seront envoyées au webhook Discord.");
 }
